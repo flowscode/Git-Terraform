@@ -30,35 +30,15 @@ output "LearningJAVA"{
   value = github_repository.learningJAVA.html_url
 }
 #
-# resource "github_repository" "repo3" {
-#   name        = "IAM-USER"
-#   visibility = "public"
-#
-# }
-#
-# output "iamuser"{
-#   value = github_repository.repo3.html_url
-# }
-#
-# resource "github_repository" "repo4" {
-#   name        = "conditional"
-#   visibility = "public"
-#
-# }
-#
-# output "conditional"{
-#   value = github_repository.repo4.html_url
-# }
-#
-# resource "github_repository" "repo5" {
-#   name        = "local-values"
-#   visibility = "public"
-#
-# }
-#
-# output "local-values"{
-#   value = github_repository.repo5.html_url
-# }
+resource "github_repository" "gitterra" {
+  name        = "Git-Terraform"
+  visibility = "public"
+
+}
+
+output "Git-Terraform"{
+  value = github_repository.gitterra.html_url
+}
 
 resource "github_repository" "repo6" {
   name        = "terraform"
