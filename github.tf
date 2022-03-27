@@ -49,3 +49,23 @@ resource "github_repository" "repo6" {
 output "terraform"{
   value = github_repository.repo6.html_url
 }
+
+resource "github_repository" "scripts" {
+  name        = "Learning_Scripting"
+  visibility = "public"
+
+}
+
+output "scripts"{
+  value = github_repository.scripts.html_url
+}
+
+resource "github_repository" "Python2" {
+  name        = "Python"
+  visibility = "public"
+
+}
+
+output "scripts"{
+  value = github_repository.Python2.html_url
+}
