@@ -66,6 +66,6 @@ resource "github_repository" "Python2" {
 
 }
 
-output "scripts"{
+output "Python2"{
   value = github_repository.Python2.html_url
 }
