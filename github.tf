@@ -69,3 +69,13 @@ resource "github_repository" "Python2" {
 output "Python2"{
   value = github_repository.Python2.html_url
 }
+
+resource "github_repository" "Docker-todo-app" {
+  name        = "Docker-todo-app"
+  visibility = "public"
+
+}
+
+output "Docker-todo-app"{
+  value = github_repository.Docker-todo-app.html_url
+}
