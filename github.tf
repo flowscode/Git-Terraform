@@ -79,3 +79,23 @@ resource "github_repository" "Docker-todo-app" {
 output "Docker-todo-app"{
   value = github_repository.Docker-todo-app.html_url
 }
+
+resource "github_repository" "learning-docker" {
+  name        = "learning-docker"
+  visibility = "public"
+
+}
+
+output "learning-docker"{
+  value = github_repository.learning-docker.html_url
+}
+
+resource "github_repository" "flow-cicd" {
+  name        = "flow-cicd"
+  visibility = "public"
+
+}
+
+output "flow-cicd"{
+  value = github_repository.flow-cicd.html_url
+}
